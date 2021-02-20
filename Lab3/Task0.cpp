@@ -16,17 +16,19 @@ int main()
 
     int *a = new int [n*m];
     a[x*m+y];
+
     int  **a = new int *[n];
     for (int i=0; i<n;++i){
         a[i] = new int [m];
     }
     a[i][j];
+
     int *a = new int [n*m];
     int **matrix = new int *[n];
     for (int i=0; i<n;++i){
-        matrix[i] = a + i*m
+        matrix[i] = a + i*m;
     }
-    matrix[i][j]
+    matrix[i][j];
 
     int a[]={1,2,3};
 
