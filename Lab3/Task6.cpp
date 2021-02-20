@@ -27,8 +27,13 @@ int main() {
 int* my_slightly_dumb_reallocation(int* source, unsigned int n_old, unsigned int n_new)
 {
     if (source == NULL){
+        if (n_new == 0){
+            return NULL;
+        }
+        else{
         int* new_array = new int[n_new];
         return new_array;
+        }
     }
     else if (n_new == 0){
         delete [] source;
