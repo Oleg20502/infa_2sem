@@ -11,13 +11,13 @@ int main()
     n += 2;
     m += 2;
     int* a = new int [n*m];
-    int** field = new int *[n];
+    int** field = new int* [n];
     for (int l = 0; l < n; ++l){
         field[l] = a + l*m;
     }
     int i, j;
-    for (i = 1; i < n-1; ++i){
-        for (j = 1; j < m-1; ++j){
+    for (i = 0; i < n; ++i){
+        for (j = 0; j < m; ++j){
             field[i][j] = 0;
         }
     }
