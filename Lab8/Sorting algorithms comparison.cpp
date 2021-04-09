@@ -182,9 +182,9 @@ int main()
     int N = 10000;
     int bound = 10000;
 
-    //test(bubble_sort, 5, 10000, 40000, 10000, 10000);
+    test(bubble_sort, 5, pow(2, 15), pow(2, 15), 2, 10000);
     //test(qsort, 5, 10000, 40000, 10000, 10000);
-    test(quick_sort, 1, pow(2, 30), pow(2, 30), 2, 100000000);
+    test(quick_sort, 5, pow(2, 15), pow(2, 15), 2, 100000);
     return 0;
 }
 
