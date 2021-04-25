@@ -39,8 +39,12 @@ int main()
         cin >> nails[i];
     }
     nails = insertion_sort(nails, N);
-
-
-
+    vector<int> d(N-1, 0);
+    d[0] = nails[1] - nails[0];
+    d[1] = nails[2] - nails[0];
+    for(int i=2; i<N-1; ++i){
+        d[i] = min(d[i-1], d[i-2]) + nails[i+1] - nails[i];
+    }
+    cout << d[N-2];
     return 0;
 }
