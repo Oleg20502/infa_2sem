@@ -10,7 +10,7 @@ struct Node
 
 struct HashMap
 {
-    int key;
+    //int key;
     int n_elements, size;
     Node** table;
     double k = 0.25;
@@ -18,7 +18,6 @@ struct HashMap
     HashMap()
     {
         size = 10;
-        //rand = size - 1;
         table = new Node* [size];
         for (int i=0; i<size; ++i){
             table[i] = NULL;
