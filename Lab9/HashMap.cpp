@@ -33,7 +33,7 @@ struct HashMap
         int h2 = hash(key, size+1);
         int i = 0;
         while (table[h1] != NULL && i < size){
-            if (table[h1]->live = false) break;
+            if (table[h1]->live == false) break;
             h1 = (h1 + h2) % size;
             ++i;
         }
